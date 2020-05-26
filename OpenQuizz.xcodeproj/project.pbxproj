@@ -59,17 +59,49 @@
 		9E6184B5247D397300F0942F /* OpenQuizz */ = {
 			isa = PBXGroup;
 			children = (
-				9E6184CA247D399300F0942F /* OpenQuizz.entitlements */,
-				9E6184B6247D397300F0942F /* AppDelegate.swift */,
-				9E6184B8247D397300F0942F /* SceneDelegate.swift */,
-				9E6184BA247D397300F0942F /* ViewController.swift */,
-				9E6184BC247D397300F0942F /* Main.storyboard */,
-				9E6184CB247D40C800F0942F /* Balham.otf */,
-				9E6184BF247D397600F0942F /* Assets.xcassets */,
-				9E6184C1247D397600F0942F /* LaunchScreen.storyboard */,
-				9E6184C4247D397600F0942F /* Info.plist */,
+				9E6184CD247D4F3700F0942F /* Model */,
+				9E6184CE247D4F5200F0942F /* View */,
+				9E6184CF247D4F5F00F0942F /* Controller */,
+				9E6184D1247D50A100F0942F /* Supporting Files */,
 			);
 			path = OpenQuizz;
+			sourceTree = "<group>";
+		};
+		9E6184CD247D4F3700F0942F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E6184CE247D4F5200F0942F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E6184BC247D397300F0942F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E6184CF247D4F5F00F0942F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E6184BA247D397300F0942F /* ViewController.swift */,
+				9E6184B6247D397300F0942F /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9E6184D1247D50A100F0942F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E6184C4247D397600F0942F /* Info.plist */,
+				9E6184CA247D399300F0942F /* OpenQuizz.entitlements */,
+				9E6184C1247D397600F0942F /* LaunchScreen.storyboard */,
+				9E6184B8247D397300F0942F /* SceneDelegate.swift */,
+				9E6184BF247D397600F0942F /* Assets.xcassets */,
+				9E6184CB247D40C800F0942F /* Balham.otf */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +261,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -282,6 +315,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -290,12 +324,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = OpenQuizz/OpenQuizz.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "OpenQuizz/Supporting Files/OpenQuizz.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = OpenQuizz/Info.plist;
+				INFOPLIST_FILE = "OpenQuizz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,12 +348,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = OpenQuizz/OpenQuizz.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "OpenQuizz/Supporting Files/OpenQuizz.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = OpenQuizz/Info.plist;
+				INFOPLIST_FILE = "OpenQuizz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
